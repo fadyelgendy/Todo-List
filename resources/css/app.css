@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+:root {
+	--baseColor: #83C165;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	font-family: 'Nunito', sans-serif;
+}
+
+header {
+	background: var(--baseColor);
+	width: 100%;
+	max-height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 10px 20px;
+	margin: 0;
+}
+
+footer {
+	background: var(--baseColor);
+	width: 100%;
+	max-height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 10px 20px;
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+div.container {
+	width: 80vw;
+	max-width: 1100px;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.task {
+	margin-top: 5px;
+	padding: 10px 20px;
+	background: var(--baseColor);
+	color:  #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.task span {
+	display: inline-block;
+	width: 100%;
+	margin-left: 10px;
+}
+
+.completed {
+	text-decoration: line-through;
+	background: #999;
+	color: #222;
+}
+
+.completed button {
+	background: #999;
+}
+
+.trash {
+	background: var(--baseColor);
+	border: none;
+	color: #990000;
+	outline: none;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.addTask {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--baseColor);
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.addTask input {
+	width: 100%;
+	margin-right: 10px;
+	outline: none;
+	border:  none;
+	padding: 5px 10px;
+	max-height: 50px;
+}
+
+.active {
+	border: none;
+	outline: none;
+	background: var(--baseColor);
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.inacitve {
+	border: none;
+	outline: none;
+	background: var(--baseColor);
+	color: #ccc;
+	font-size: 18px;
+	cursor: not-allowed;
+}
+
